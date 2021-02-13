@@ -1,0 +1,129 @@
+/*
+ --------------------------------------------------------------------------------------------
+ ---    _____  _____   _____   ______           _____   _____  ______    _____   _        ---
+ ---   / ___ \ | __ \ / ___ \ |  ___ \    ---   | __ \  ___ ] |  ___ \  / ___ \ | |       ---   
+ ---   ||___|| | ___/ |  ___/ | |   | |   ---   | ___/ /___ | | |   | | |  ___/ | |___    ---
+ ---   \_____/ ||     \_____  |_|   |_|   ---   ||     \____| |_|   |_| \_____  |_____]   ---
+ ---                                                                                      ---
+ --------------------------------------------------------------------------------------------
+  © Copyright. GNU-AGPL V3 (www.choosealicense.com/licenses/agpl-3.0/). All Rights Reserved.
+ --------------------------------------------------------------------------------------------
+
+ @author: Arthur "ArT_DsL" Dias dos Santos Lasso
+ @created_at: 2021-02-13
+ @last_update: 2021-02-13
+ @file_type: CSS
+*/
+
+/* -- fonts -- */
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+
+/* -- general -- */
+html{
+	background-color: #1d403c;
+	border: 0px;
+	padding: 0px;
+}
+#login-hop-openpanel{
+	margin-left: 36%;
+	margin-top: 10%;
+	border-radius: 5px;
+	background-color: white;
+	width: 25%;
+	height: 240px;
+	padding-top: 1%;
+	position: relative;
+	display: block;
+}
+.logo-openpanel::before{
+	font-family: 'Concert One', cursive;
+	font-size: 36px;
+	content: "OPENPanel";
+	font-weight: 600;
+	opacity: 0.4;
+	text-align: center;
+	width: 100%;
+}
+.logo-openpanel{
+	text-align: center;
+	width: 100%;
+}
+.sublogo-hop-openpanel::before{
+	font-family: 'Arial';
+	font-size: 12px;
+	content: "Client Panel";
+	font-weight: 900;
+	opacity: 0.4;
+	text-align: center;
+	width: 100%;
+}
+.sublogo-hop-openpanel{
+	text-align: center;
+	width: 100%;
+}
+.form-control-openpanel{
+	display: block;
+	position: relative;
+	margin-top: 5%;
+	text-align: center;
+}
+.text-field-openpanel{
+	outline: none;
+	height: 30px;
+	width: 70%;
+	border: 1px solid white;
+	border-bottom: 1px solid black;
+	font-family: 'Arial';
+	font-weight: 600;
+}
+.password-field-openpanel{
+	outline: none;
+	height: 30px;
+	width: 70%;
+	border: 1px solid white;
+	border-bottom: 1px solid black;
+	font-family: 'Arial';
+	font-weight: 600;
+}
+.btn-login-openpanel{
+	margin-top: 3%;
+	outline: none;
+	font-family: 'Lato', sans-serif;
+	height: 15%;
+	width: 70%;
+	background-color: #1858b1;
+	color: white;
+	border-radius: 5px;
+	box-shadow: 0px 0px 0px 0px white;
+	cursor: pointer;
+}
+.btn-login-openpanel:hover{
+	margin-top: 3%;
+	outline: none;
+	font-family: 'Lato', sans-serif;
+	height: 15%;
+	width: 70%;
+	background-color: #1869da;
+	color: white;
+	border-radius: 5px;
+	box-shadow: 0px 0px 0px 0px white;
+	cursor: pointer;
+}
+footer{
+	bottom: 0;
+	text-align: center;
+	color: white;
+	position: fixed;
+	display: block;
+	width: 97%;
+	margin-bottom: 1%;
+	font-family: 'Lato', sans-serif;
+	font-size: 11px;
+}
+.flags-hop-openpanel{
+	margin-top: 1%;
+}
+.flag-hop-openpanel{
+	margin-right: 1%;
+}
