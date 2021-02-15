@@ -22,3 +22,4 @@ define("_USERNAME_PLACEHOLDER", "Username");
 define("_PASSWORD_PLACEHOLDER", "Password");
 define("_LOGIN_BUTTON", "Login");
 define("_COPYRIGHT_NOTICE", "OPENPanel. All Rights Reserved.");
+define("_ERROR_LOGIN_STRING", "Your login credentials are wrong, please correct and try again.");

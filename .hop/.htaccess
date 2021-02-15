@@ -1,0 +1,16 @@
+# CONFIGURAR UTILIZAÇÃO DO HTTPS
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://192.168.0.104/$1 [R,L]
+
+#remover .php
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+#URL Amigavel
+RewriteRule ^ativarconta\/([A-Z-a-z-0-9].*)\/([A-Z-a-z-0-9].*)?$ ativar_conta.php?c=$1&uid=$2 [QSA,L]
+RewriteRule ^perfil\/(.*)$ perfil.php?u=$1 [QSA,L]
+
+#Bloquear acesso as pastas
+#Options -Indexes

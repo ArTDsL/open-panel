@@ -1,4 +1,3 @@
-<?php
 /*
  --------------------------------------------------------------------------------------------
  ---    _____  _____   _____   ______           _____   _____  ______    _____   _        ---
@@ -11,15 +10,46 @@
  --------------------------------------------------------------------------------------------
 
  @author: Arthur "ArT_DsL" Dias dos Santos Lasso
- @created_at: 2021-02-13
- @last_update: 2021-02-13
- @file_type: PHP Language
- @language: Portugues-Brasil
+ @created_at: 2021-02-14
+ @last_update: 2021-02-14
+ @file_type: CSS
 */
 
-define("_TITLE","OPENPanel - Painel de Controle do Host");
-define("_USERNAME_PLACEHOLDER", "Usuário");
-define("_PASSWORD_PLACEHOLDER", "Senha");
-define("_LOGIN_BUTTON", "Entrar");
-define("_COPYRIGHT_NOTICE", "OPENPanel. Todos os direitos reservados.");
-define("_ERROR_LOGIN_STRING", "Your login credentials are wrong, please correct and try again.");
+/* --- Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+
+/* --- General --- */
+html, body{
+	margin: 0px;
+	padding: 0px;
+}
+/* --- Superior Menu --- */
+#superior-menu-hop-openpanel{
+	margin: 0px;
+	padding: 0;
+	width: 100%;
+	height: 30px;
+	background-color: #eaeaea;
+	box-shadow: 1px 1px 4px 1px #c3c3c3;
+	width: 100%;
+	position: absolute;
+	display: block;
+}
+.info-principal-superior-hop-openpanel{
+	font-family: 'Lato', sans-serif;
+	font-size: 13px;
+	margin-top: 0.5%;
+	float: right;
+	margin-right: 2.5%;
+	font-weight: 800;
+	font-size: 12px;
+}
+.version-hop-openpanel{
+	font-weight: 400;
+	font-family: 'Arial';
+}
+.icon-logout-hop-openpanel{
+	position: absolute;
+	display: inline;
+	margin-left: 0.5%;
+}

@@ -36,7 +36,7 @@ verifyLocation();
 		<div id="login-hop-openpanel">
 			<div class="logo-openpanel"></div>
 			<div class="sublogo-hop-openpanel"></div>
-			<form class="form-login-hop-openpanel" action="login.php" method="POST">
+			<form class="form-login-hop-openpanel" action="do_login.php" method="POST">
 				<div class="form-control-openpanel">
 					<input type="text" class="text-field-openpanel" name="username" id="username" placeholder="<?php echo _USERNAME_PLACEHOLDER; ?>" required>
 				</div>

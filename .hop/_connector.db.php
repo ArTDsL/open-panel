@@ -11,15 +11,12 @@
  --------------------------------------------------------------------------------------------
 
  @author: Arthur "ArT_DsL" Dias dos Santos Lasso
- @created_at: 2021-02-13
- @last_update: 2021-02-13
- @file_type: PHP Language
- @language: Portugues-Brasil
+ @created_at: 2021-02-14
+ @last_update: 2021-02-14
+ @file_type: PHP CONNECTOR
 */
-
-define("_TITLE","OPENPanel - Painel de Controle do Host");
-define("_USERNAME_PLACEHOLDER", "Usuário");
-define("_PASSWORD_PLACEHOLDER", "Senha");
-define("_LOGIN_BUTTON", "Entrar");
-define("_COPYRIGHT_NOTICE", "OPENPanel. Todos os direitos reservados.");
-define("_ERROR_LOGIN_STRING", "Your login credentials are wrong, please correct and try again.");
+function DBCONN_ROOT_MOD()
+{
+    $connection_string = new PDO('mysql:host='._MYSQL_SERVER.';dbname='._MYSQL_SERVER_DATABASE.';charset=utf8', _MYSQL_SERVER_USER, _MYSQL_SERVER_PASSWORD);
+    return $connection_string;
+}

@@ -11,15 +11,29 @@
  --------------------------------------------------------------------------------------------
 
  @author: Arthur "ArT_DsL" Dias dos Santos Lasso
- @created_at: 2021-02-13
- @last_update: 2021-02-13
- @file_type: PHP Language
- @language: Portugues-Brasil
+ @created_at: 2021-02-14
+ @last_update: 2021-02-14
+ @file_type: PHP CONFIGURATION
 */
 
-define("_TITLE","OPENPanel - Painel de Controle do Host");
-define("_USERNAME_PLACEHOLDER", "Usuário");
-define("_PASSWORD_PLACEHOLDER", "Senha");
-define("_LOGIN_BUTTON", "Entrar");
-define("_COPYRIGHT_NOTICE", "OPENPanel. Todos os direitos reservados.");
-define("_ERROR_LOGIN_STRING", "Your login credentials are wrong, please correct and try again.");
+//Path configurations
+define("_SERVER_URL", "192.168.0.104");
+define("_MAIN_URL", "https://192.168.0.104/");
+define("_MAIN_SEMTEX_URL", "https://192.168.0.104");
+define("_HOP_PANEL_URL", "https://192.168.0.104/.hop/");
+
+//Main Theme
+define("_MAIN_TEMPLATE_THEME", "lugnica_white");
+
+//Theme Path
+define("_HOP_THEME_URL", _HOP_PANEL_URL."templates/"._MAIN_TEMPLATE_THEME."/");
+
+//Password Salt Config
+define("_SALT_PWD", "5#NPxuFhv*8xzKsHq.9O-"."-salt-openpanel");
+
+//MySQL *ROOT* Access
+define("_MYSQL_SERVER", "localhost");
+define("_MYSQL_SERVER_PORT", "3306");
+define("_MYSQL_SERVER_USER", "MYSQL_USERNAME");
+define("_MYSQL_SERVER_PASSWORD", "MYSQL_PASSWORD");
+define("_MYSQL_SERVER_DATABASE", "openpanel_db");

@@ -11,15 +11,26 @@
  --------------------------------------------------------------------------------------------
 
  @author: Arthur "ArT_DsL" Dias dos Santos Lasso
- @created_at: 2021-02-13
- @last_update: 2021-02-13
- @file_type: PHP Language
- @language: Portugues-Brasil
+ @created_at: 2021-02-14
+ @last_update: 2021-02-14
+ @file_type: PHP
 */
+include('functions.php');
+//check language
+verifyLocation();
+?>
+<html>
+	<head>
+		<title><?php echo _TITLE; ?></title>
 
-define("_TITLE","OPENPanel - Painel de Controle do Host");
-define("_USERNAME_PLACEHOLDER", "Usuário");
-define("_PASSWORD_PLACEHOLDER", "Senha");
-define("_LOGIN_BUTTON", "Entrar");
-define("_COPYRIGHT_NOTICE", "OPENPanel. Todos os direitos reservados.");
-define("_ERROR_LOGIN_STRING", "Your login credentials are wrong, please correct and try again.");
+		<!-- CSS -->
+		<link rel="stylesheet" href="<?php echo _HOP_THEME_URL; ?>template.css">
+	</head>
+	<body>
+		<div id="superior-menu-hop-openpanel">
+			<div class="info-principal-superior-hop-openpanel">
+				<?php echo PHP_OS.' - '.php_uname(); ?> - <span class="version-hop-openpanel">[OPENPanel.V0.0.1]<span> - <a href="do_logout.php" title="Logout" alt="Logout"><img class="icon-logout-hop-openpanel" src="<?php echo _HOP_PANEL_URL.'/icons/logout_btn.png'; ?>" width="15" /></a>
+			</div>
+		</div>
+	</body>
+</html>
