@@ -16,6 +16,10 @@
  @file_type: PHP
 */
 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 include('functions.php');
 include('_connector.db.php');
 
@@ -23,7 +27,7 @@ $PDOConnector = DBCONN_ROOT_MOD();
 
 if(!isset($_POST['username']) || !isset($_POST['password'])){
 	//bad request
-	echo "<script>window.location.href='"._HOP_PANEL_URL."login?location=".$_COOKIE["openpanel_hop_location"]."&error=1';</script>";
+	echo "<script>window.location.href='"._HOP_PANEL_URL."login.php?location=".$_COOKIE["openpanel_hop_location"]."&error=1';</script>";
 	exit;
 }
 
@@ -32,7 +36,7 @@ $re_password = $_POST['password'];
 
 if(!is_string($re_username)){
 	//bad username
-	echo "<script>window.location.href='"._HOP_PANEL_URL."login?location=".$_COOKIE["openpanel_hop_location"]."&error=2';</script>";
+	echo "<script>window.location.href='"._HOP_PANEL_URL."login.php?location=".$_COOKIE["openpanel_hop_location"]."&error=2';</script>";
 	exit;
 }
 
@@ -41,13 +45,13 @@ $stmtLogin = $PDOConnector->prepare($sqlLogin);
 $stmtLogin->bindParam(1, $re_username, PDO::PARAM_STR);
 if(!$stmtLogin->execute()){
 	//some problem in select statement
-	echo "<script>window.location.href='"._HOP_PANEL_URL."login?location=".$_COOKIE["openpanel_hop_location"]."&error=3';</script>";
+	echo "<script>window.location.href='"._HOP_PANEL_URL."login.php?location=".$_COOKIE["openpanel_hop_location"]."&error=3';</script>";
 	exit;
 }else{
 	echo $stmtLogin->rowCount();
 	if($stmtLogin->rowCount() == 0){
 		//user not found
-		echo "<script>window.location.href='"._HOP_PANEL_URL."login?location=".$_COOKIE["openpanel_hop_location"]."&error=4';</script>";
+		echo "<script>window.location.href='"._HOP_PANEL_URL."login.php?location=".$_COOKIE["openpanel_hop_location"]."&error=4';</script>";
 		exit;
 	}
 
@@ -59,7 +63,7 @@ if(!$stmtLogin->execute()){
 
 	if(!password_verify($re_password, $passDB)){
 		//wrong password
-		echo "<script>window.location.href='"._HOP_PANEL_URL."login?location=".$_COOKIE["openpanel_hop_location"]."&error=5';</script>";
+		echo "<script>window.location.href='"._HOP_PANEL_URL."login.php?location=".$_COOKIE["openpanel_hop_location"]."&error=5';</script>";
 		exit;
 	}
 
@@ -100,10 +104,10 @@ if(!$stmtLogin->execute()){
 	$stmtMakeLogin->bindParam(3, $userDB, PDO::PARAM_STR);
 	if(!$stmtMakeLogin->execute()){
 		//some problem in select statement
-		echo "<script>window.location.href='"._HOP_PANEL_URL."login?location=".$_COOKIE["openpanel_hop_location"]."&error=6';</script>";
+		echo "<script>window.location.href='"._HOP_PANEL_URL."login.php?location=".$_COOKIE["openpanel_hop_location"]."&error=6';</script>";
 		exit;
 	}else{
-		echo "<script>window.location.href='"._HOP_PANEL_URL."panel?location=".$_COOKIE["openpanel_hop_location"]."';</script>";
+		echo "<script>window.location.href='"._HOP_PANEL_URL."panel.php?location=".$_COOKIE["openpanel_hop_location"]."';</script>";
 		exit;
 	}
 }

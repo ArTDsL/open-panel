@@ -1,4 +1,3 @@
-<?php
 /*
  --------------------------------------------------------------------------------------------
  ---    _____  _____   _____   ______           _____   _____  ______    _____   _        ---
@@ -11,14 +10,15 @@
  --------------------------------------------------------------------------------------------
 
  @author: Arthur "ArT_DsL" Dias dos Santos Lasso
- @created_at: 2021-02-13
- @last_update: 2021-02-13
- @file_type: PHP Language
- @language: Portugues-Brasil
+ @created_at: 2021-02-15
+ @last_update: 2021-02-15
+ @file_type: JS
 */
+//Global
+var ifr = document.getElementById("content-iframe-hop-openpanel");
 
-define("_TITLE","OPENPanel - Painel do Cliente");
-define("_USERNAME_PLACEHOLDER", "Usuário");
-define("_PASSWORD_PLACEHOLDER", "Senha");
-define("_LOGIN_BUTTON", "Entrar");
-define("_COPYRIGHT_NOTICE", "OPENPanel. Todos os direitos reservados.");
+//Button: Server Information
+function btn_server_cfg_server_info(){
+	var url = 'server_info.php';
+	ifr.src = url;
+}

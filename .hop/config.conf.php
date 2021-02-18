@@ -12,7 +12,7 @@
 
  @author: Arthur "ArT_DsL" Dias dos Santos Lasso
  @created_at: 2021-02-14
- @last_update: 2021-02-14
+ @last_update: 2021-02-15
  @file_type: PHP CONFIGURATION
 */
 
@@ -34,6 +34,6 @@ define("_SALT_PWD", "5#NPxuFhv*8xzKsHq.9O-"."-salt-openpanel");
 //MySQL *ROOT* Access
 define("_MYSQL_SERVER", "localhost");
 define("_MYSQL_SERVER_PORT", "3306");
-define("_MYSQL_SERVER_USER", "MYSQL_USERNAME");
-define("_MYSQL_SERVER_PASSWORD", "MYSQL_PASSWORD");
+define("_MYSQL_SERVER_USER", "testuser");
+define("_MYSQL_SERVER_PASSWORD", "1K8b19e0szM3dNXl#");
 define("_MYSQL_SERVER_DATABASE", "openpanel_db");

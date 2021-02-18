@@ -30,7 +30,19 @@ $stmtMakeLogin->bindParam(1, $token, PDO::PARAM_STR);
 $stmtMakeLogin->bindParam(2, $_COOKIE["openpanel_hop_token"], PDO::PARAM_STR);
 if(!$stmtMakeLogin->execute()){
 	//some problem in select statement
-	echo "<script>window.location.href='"._HOP_PANEL_URL."login?location=".$_COOKIE["openpanel_hop_location"]."&error=7';</script>";
+	//remove all cookies
+	setcookie("openpanel_hop_token", '', [
+		'expires' => time()-3600,
+		'path' => '/',
+		'domain' => _SERVER_URL,
+	]); //time() + (10 * 365 * 24 * 60 * 60)
+
+	setcookie("openpanel_hop_info", '', [
+			'expires' => time()-3600,
+			'path' => '/',
+			'domain' => _SERVER_URL,
+		]);
+	echo "<script>window.location.href='"._HOP_PANEL_URL."login.php?location=".$_COOKIE["openpanel_hop_location"]."&error=7';</script>";
 	exit;
 }else{
 	//remove all cookies
@@ -45,6 +57,6 @@ if(!$stmtMakeLogin->execute()){
 				'path' => '/',
 				'domain' => _SERVER_URL,
 			]);
-	echo "<script>window.location.href='"._HOP_PANEL_URL."login?location=".$_COOKIE["openpanel_hop_location"]."&logout=yes';</script>";
+	echo "<script>window.location.href='"._HOP_PANEL_URL."login.php?location=".$_COOKIE["openpanel_hop_location"]."&logout=yes';</script>";
 	exit;
 }
