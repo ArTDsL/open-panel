@@ -33,13 +33,13 @@ verifyLocation();
 			</div>
 		</div>
 		<div id="left-menu-hop-openpanel">
-			<!-- Menu Item -->
+		<!-- Menu Item -->
 			<div class="title-item-menu-hop-openpanel">
 				<div class="icon-item-menu-hop-openpanel">
 					<img src="<?php echo _HOP_PANEL_URL.'icons/config_icon.png'; ?>" width="22" />
 				</div>
 				<div class="description-title-item-hop-openpanel">
-					GENERAL CONFIGURATION
+					<?php echo _GENERAL_PRINCIPAL_MENU_OPTION; ?>
 				</div>
 				<div class="expand-retract-icon-title-hop-openpanel">
 					<img src="<?php echo _HOP_PANEL_URL.'icons/plus_icon.png'; ?>" width="19" />
@@ -48,25 +48,59 @@ verifyLocation();
 			<!-- Sub Menu Item -->
 			<div class="suboptions-item-menu-hop-openpanel" id="submenu-sv-config">
 				<a class="option-suboptions-item-menu-hop-openpanel" href="server_information.php" target="content-iframe-hop-openpanel">
-					Server Information
+					<?php echo _GENERAL_MENU_SERVER_INFO; ?>
 				</a>
 			</div>
 			<!-- End Sub Menu Item -->
 			<!-- Sub Menu Item -->
 			<div class="suboptions-item-menu-hop-openpanel" id="submenu-sv-config">
 				<a class="option-suboptions-item-menu-hop-openpanel" href="server_monitor.php" target="content-iframe-hop-openpanel">
-					Server Monitor
+					<?php echo _GENERAL_MENU_SERVER_MONITOR; ?>
 				</a>
 			</div>
 			<!-- End Sub Menu Item -->
 			<!-- Sub Menu Item -->
 			<div class="suboptions-item-menu-hop-openpanel" id="submenu-sv-config">
-				<a class="option-suboptions-item-menu-hop-openpanel" href="#">
-					Startup Configuration
+				<a class="option-suboptions-item-menu-hop-openpanel" href="startup_configurations.php" target="content-iframe-hop-openpanel">
+					<?php echo _GENERAL_MENU_STARTUP_CONFIGURATION; ?>
 				</a>
 			</div>
 			<!-- End Sub Menu Item -->
-			<!-- End Menu Item -->
+		<!-- End Menu Item -->
+		<!-- Menu Item -->
+		<div class="title-item-menu-hop-openpanel">
+				<div class="icon-item-menu-hop-openpanel">
+					<img src="<?php echo _HOP_PANEL_URL.'icons/users_icon.png'; ?>" width="22" />
+				</div>
+				<div class="description-title-item-hop-openpanel">
+					<?php echo _USERS_MENU_OPTION; ?>
+				</div>
+				<div class="expand-retract-icon-title-hop-openpanel">
+					<img src="<?php echo _HOP_PANEL_URL.'icons/plus_icon.png'; ?>" width="19" />
+				</div>
+			</div>
+			<!-- Sub Menu Item -->
+			<div class="suboptions-item-menu-hop-openpanel" id="submenu-sv-config">
+				<a class="option-suboptions-item-menu-hop-openpanel" href="new_user.php" target="content-iframe-hop-openpanel">
+					<?php echo _USERS_MENU_NEW_USER; ?>
+				</a>
+			</div>
+			<!-- End Sub Menu Item -->
+			<!-- Sub Menu Item -->
+			<div class="suboptions-item-menu-hop-openpanel" id="submenu-sv-config">
+				<a class="option-suboptions-item-menu-hop-openpanel" href="#" target="content-iframe-hop-openpanel">
+					<?php echo _USERS_MENU_EDIT_USER; ?>
+				</a>
+			</div>
+			<!-- End Sub Menu Item -->
+			<!-- Sub Menu Item -->
+			<div class="suboptions-item-menu-hop-openpanel" id="submenu-sv-config">
+				<a class="option-suboptions-item-menu-hop-openpanel" href="#" target="content-iframe-hop-openpanel">
+					<?php echo _USERS_MENU_REMOVE_USER; ?>
+				</a>
+			</div>
+			<!-- End Sub Menu Item -->
+		<!-- End Menu Item -->
 		</div>
 		<div id="content-hop-openpanel">
 			<iframe class="content-frame-hop-openpanel" src="server_information.php" name="content-iframe-hop-openpanel" id="content-iframe-hop-openpanel"></iframe>

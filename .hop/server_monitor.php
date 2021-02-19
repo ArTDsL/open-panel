@@ -12,7 +12,7 @@
 
  @author: Arthur "ArT_DsL" Dias dos Santos Lasso
  @created_at: 2021-02-15
- @last_update: 2021-02-17
+ @last_update: 2021-02-15
  @file_type: PHP
 */
 include('functions.php');
@@ -35,30 +35,30 @@ verifyLocation();
 			<?php echo _SERVER_INFORMATION_DESC; ?>
 		</div>
 		<div class="page-content-hop-openpanel">
-			<div class="info-hop-openpanel">
-				<div class="title-info-hop-openpanel"><?php echo _SERVER_SYSTEM_INFO; ?></div>
+			<div class="server-info-hop-openpanel">
+				<div class="title-info-hop-openpanel">System Processor Information</div>
 				<hr>
 				<?php
 					//return server data on HOP Panel
 					echo PHP_OS.' - '.php_uname();
 				?>
 			</div>
-			<div class="info-hop-openpanel">
-				<div class="title-info-hop-openpanel"><?php echo _SERVER_PROCESSOR_INFO; ?></div>
+			<div class="server-info-hop-openpanel">
+				<div class="title-info-hop-openpanel">Server Processor Information</div>
 				<?php
 					//return server data on HOP Panel
 					return_server_data();
 				?>
 			</div>
-			<div class="info-hop-openpanel">
-				<div class="title-info-hop-openpanel"><?php echo _SERVER_MEMORY_INFO; ?></div>
+			<div class="server-info-hop-openpanel">
+				<div class="title-info-hop-openpanel">Memory Information</div>
 				<?php
 					//return memory data on HOP Panel
 					return_server_memory_data();
 				?>
 			</div>
-			<div class="info-hop-openpanel">
-				<div class="title-info-hop-openpanel"><?php echo _SERVER_DISK_INFO; ?></div>
+			<div class="server-info-hop-openpanel">
+				<div class="title-info-hop-openpanel">Disk Information</div>
 				<?php
 					//return disk data on HOP Panel
 					return_disk_data();

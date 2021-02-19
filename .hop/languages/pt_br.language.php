@@ -12,7 +12,7 @@
 
  @author: Arthur "ArT_DsL" Dias dos Santos Lasso
  @created_at: 2021-02-13
- @last_update: 2021-02-17
+ @last_update: 2021-02-18
  @file_type: PHP Language
  @language: Portugues-Brasil
 */
@@ -32,3 +32,23 @@ define("_SERVER_DISK_INFO", "Informações de Discos");
 define("_SERVER_LABEL_INFO_MEMORY_TOTAL", "Memória Total:");
 define("_SERVER_LABEL_INFO_MEMORY_FREE", "Memória Livre:");
 define("_SERVER_LABEL_INFO_MEMORY_AVAILABLE", "Memória Disponível:");
+define("_GENERAL_PRINCIPAL_MENU_OPTION", "CONFIGURAÇÕES GERAIS");
+define("_USERS_MENU_OPTION", "GERENC. DE USUÁRIOS");
+define("_GENERAL_MENU_SERVER_INFO", "Informação do Server");
+define("_GENERAL_MENU_SERVER_MONITOR", "Monitor do Servidor");
+define("_GENERAL_MENU_STARTUP_CONFIGURATION", "Configurações Iniciais");
+define("_STARTUPCONFIG_INFORMATION_TITLE", "CONFIGURAÇÕES INICIAIS");
+define("_STARTUPCONFIG_INFORMATION_DESC", "Configurações iniciais do servidor OPENPanel, complete os passos com cuidado para garantir um serviço estável.");
+define("_STARTUPCONFIG_INFORMATION2_DESC", "Após selecionar NORMAL / ADVANÇADO a página irá redirecionar para o próximo passo automaticamente.");
+define("_USERS_MENU_NEW_USER", "Novo Usuário");
+define("_USERS_MENU_EDIT_USER", "Editar / Modificar Usuário");
+define("_USERS_MENU_REMOVE_USER", "Encerrar Usuário");
+define("_NEW_USER_INFORMATION_DESC", "Crie um usuário para multiplas regras: Administrador, Revendedor ou Usuário do Host.");
+define("_NEW_USER_TITLE_BOX", "Informações do Usuário");
+define("_SETTINGS_TITLE_BOX", "Configurações da Conta");
+define("_SERVER_CONFIG_TYPE_NORMAL", "CONFIGURAÇÃO NORMAL");
+define("_SERVER_CONFIG_TYPE_ADVANCED", "CONFIGURAÇÃO AVANÇADA");
+define("_PASSWORD_CONFIRM_PLACEHOLDER", "Confirme a Senha");
+define("_EMAIL_PLACEHOLDER", "E-mail");
+define("_NEW_USER_ROLE", "Regra");
+define("_NEW_USER_CLOP_THEME", "Tema do CLOP");

@@ -11,8 +11,8 @@
  --------------------------------------------------------------------------------------------
 
  @author: Arthur "ArT_DsL" Dias dos Santos Lasso
- @created_at: 2021-02-15
- @last_update: 2021-02-17
+ @created_at: 2021-02-18
+ @last_update: 2021-02-18
  @file_type: PHP
 */
 include('functions.php');
@@ -29,41 +29,23 @@ verifyLocation();
 	</head>
 	<body>
 		<div class="page-title-hop-openpanel">
-			<?php echo _SERVER_INFORMATION_TITLE; ?>
+			<?php echo _STARTUPCONFIG_INFORMATION_TITLE; ?>
 		</div>
 		<div class="page-description-hop-openpanel">
-			<?php echo _SERVER_INFORMATION_DESC; ?>
+			<?php echo _STARTUPCONFIG_INFORMATION_DESC; ?>
 		</div>
 		<div class="page-content-hop-openpanel">
-			<div class="info-hop-openpanel">
-				<div class="title-info-hop-openpanel"><?php echo _SERVER_SYSTEM_INFO; ?></div>
-				<hr>
-				<?php
-					//return server data on HOP Panel
-					echo PHP_OS.' - '.php_uname();
-				?>
+			<div class="info-hop-openpanel top-info-hop-panel">
+				<div class="option-div-hop-openpanel">
+					<input type="radio" value="1" name="cfg_option"> <div class="option-radio-hop-openpanel"><?php echo _SERVER_CONFIG_TYPE_NORMAL; ?></div>
+				</div>
+				<div class="option-div-hop-openpanel">
+					<input type="radio" value="2" name="cfg_option"> <div class="option-radio-hop-openpanel"><?php echo _SERVER_CONFIG_TYPE_ADVANCED; ?></div>
+				</div>
 			</div>
-			<div class="info-hop-openpanel">
-				<div class="title-info-hop-openpanel"><?php echo _SERVER_PROCESSOR_INFO; ?></div>
-				<?php
-					//return server data on HOP Panel
-					return_server_data();
-				?>
-			</div>
-			<div class="info-hop-openpanel">
-				<div class="title-info-hop-openpanel"><?php echo _SERVER_MEMORY_INFO; ?></div>
-				<?php
-					//return memory data on HOP Panel
-					return_server_memory_data();
-				?>
-			</div>
-			<div class="info-hop-openpanel">
-				<div class="title-info-hop-openpanel"><?php echo _SERVER_DISK_INFO; ?></div>
-				<?php
-					//return disk data on HOP Panel
-					return_disk_data();
-				?>
-			</div>
+		</div>
+		<div class="page-description-hop-openpanel">
+			<?php echo _STARTUPCONFIG_INFORMATION2_DESC; ?>
 		</div>
 	</body>
 </html>
