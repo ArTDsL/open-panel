@@ -12,7 +12,7 @@
 
  @author: Arthur "ArT_DsL" Dias dos Santos Lasso
  @created_at: 2021-02-14
- @last_update: 2021-02-15
+ @last_update: 2021-02-20
  @file_type: PHP CONFIGURATION
 */
 
@@ -21,6 +21,7 @@ define("_SERVER_URL", "192.168.0.104");
 define("_MAIN_URL", "https://192.168.0.104/");
 define("_MAIN_SEMTEX_URL", "https://192.168.0.104");
 define("_HOP_PANEL_URL", "https://192.168.0.104/.hop/");
+define("_HOP_SCRIPT_URL", "/.hop/");
 
 //Main Theme
 define("_MAIN_TEMPLATE_THEME", "lugnica_white");

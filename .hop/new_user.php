@@ -64,9 +64,9 @@ verifyLocation();
 				<label for="role-newuser">
                     <b><?php echo _NEW_USER_ROLE; ?>:</b>
                     <select class="input-text-openpanel" id="role-newuser" name="role-newuser">
-                        <option value="3">Normal User</option>
-                        <option value="2">Reseller</option>
-                        <option value="1">Administrator</option>
+                        <option value="3"><?php echo _NEW_USER_ROLE_NORMAL_USER; ?></option>
+                        <option value="2"><?php echo _NEW_USER_ROLE_RESELLER ?></option>
+                        <option value="1"><?php echo _NEW_USER_ROLE_ADMIN ?></option>
                     </select>
                 </label>
                 <hr>
@@ -79,6 +79,7 @@ verifyLocation();
                 </label>
                 <hr>
 			</div>
+            <button class="btn-submit-blue" type="submit">Criar</button>
 		</div>
 	</body>
 </html>

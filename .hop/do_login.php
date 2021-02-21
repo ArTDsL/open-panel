@@ -12,7 +12,7 @@
 
  @author: Arthur "ArT_DsL" Dias dos Santos Lasso
  @created_at: 2021-02-14
- @last_update: 2021-02-14
+ @last_update: 2021-02-20
  @file_type: PHP
 */
 
@@ -27,7 +27,7 @@ $PDOConnector = DBCONN_ROOT_MOD();
 
 if(!isset($_POST['username']) || !isset($_POST['password'])){
 	//bad request
-	echo "<script>window.location.href='"._HOP_PANEL_URL."login.php?location=".$_COOKIE["openpanel_hop_location"]."&error=1';</script>";
+	give_error("001", _HOP_PANEL_URL."login.php?location=".$_COOKIE["openpanel_hop_location"]."&error=1");
 	exit;
 }
 
@@ -36,7 +36,7 @@ $re_password = $_POST['password'];
 
 if(!is_string($re_username)){
 	//bad username
-	echo "<script>window.location.href='"._HOP_PANEL_URL."login.php?location=".$_COOKIE["openpanel_hop_location"]."&error=2';</script>";
+	give_error("002", _HOP_PANEL_URL."login.php?location=".$_COOKIE["openpanel_hop_location"]."&error=2");
 	exit;
 }
 
@@ -45,13 +45,13 @@ $stmtLogin = $PDOConnector->prepare($sqlLogin);
 $stmtLogin->bindParam(1, $re_username, PDO::PARAM_STR);
 if(!$stmtLogin->execute()){
 	//some problem in select statement
-	echo "<script>window.location.href='"._HOP_PANEL_URL."login.php?location=".$_COOKIE["openpanel_hop_location"]."&error=3';</script>";
+	give_error("003", _HOP_PANEL_URL."login.php?location=".$_COOKIE["openpanel_hop_location"]."&error=3");
 	exit;
 }else{
-	echo $stmtLogin->rowCount();
+	$stmtLogin->rowCount();
 	if($stmtLogin->rowCount() == 0){
 		//user not found
-		echo "<script>window.location.href='"._HOP_PANEL_URL."login.php?location=".$_COOKIE["openpanel_hop_location"]."&error=4';</script>";
+		give_error("004", _HOP_PANEL_URL."login.php?location=".$_COOKIE["openpanel_hop_location"]."&error=4");
 		exit;
 	}
 
@@ -63,7 +63,7 @@ if(!$stmtLogin->execute()){
 
 	if(!password_verify($re_password, $passDB)){
 		//wrong password
-		echo "<script>window.location.href='"._HOP_PANEL_URL."login.php?location=".$_COOKIE["openpanel_hop_location"]."&error=5';</script>";
+		give_error("005", _HOP_PANEL_URL."login.php?location=".$_COOKIE["openpanel_hop_location"]."&error=5");
 		exit;
 	}
 
@@ -72,7 +72,7 @@ if(!$stmtLogin->execute()){
 
 	$last_login_info['login_info']['device'] = $_SERVER['HTTP_USER_AGENT'];
 	$last_login_info['login_info']['ip_addr'] = $_SERVER['REMOTE_ADDR'];
-	$last_login_info['login_info']['ip_xforwarded'] = $_SERVER['HTTP_X_FORWARDED_FOR'];
+	$last_login_info['login_info']['ip_xforwarded'] = isset($_SERVER['HTTP_X_FORWARDED_FOR']);
 	$last_login_info['login_info']['username'] = $userDB;
 	$last_login_info['login_info']['date_time'] = date('Y-m-d H:i:s');
 
@@ -103,11 +103,11 @@ if(!$stmtLogin->execute()){
 	$stmtMakeLogin->bindParam(2, $last_login_information, PDO::PARAM_STR);
 	$stmtMakeLogin->bindParam(3, $userDB, PDO::PARAM_STR);
 	if(!$stmtMakeLogin->execute()){
-		//some problem in select statement
-		echo "<script>window.location.href='"._HOP_PANEL_URL."login.php?location=".$_COOKIE["openpanel_hop_location"]."&error=6';</script>";
+		//some problem in update statement
+		give_error("006", _HOP_PANEL_URL."login.php?location=".$_COOKIE["openpanel_hop_location"]."&error=6");
 		exit;
 	}else{
-		echo "<script>window.location.href='"._HOP_PANEL_URL."panel.php?location=".$_COOKIE["openpanel_hop_location"]."';</script>";
+		give_success(_HOP_PANEL_URL."panel.php?location=".$_COOKIE["openpanel_hop_location"]);
 		exit;
 	}
 }

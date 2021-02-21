@@ -202,7 +202,7 @@ html, body{
 	font-family: 'Lato', sans-serif;
 	font-size: 22px;
 }
-.top-info-hop-panel{
+.top-info-hop-panel-openpanel{
 	padding-top: 2% !important;
 	padding-bottom: 0% !important;
 }
@@ -227,4 +227,32 @@ html, body{
 	position: relative;
 	display: block;
 	width: 70%;
+}
+.btn-submit-blue{
+	cursor: pointer;
+	background-color: dodgerblue;
+	outline: none;
+	color: white;
+	border: 1px solid #eaeaea;
+	padding: 0.6%;
+	font-size: 18px;
+	font-weight: 800;
+	font-family: 'Lato', sans-serif;
+	width: 8%;
+	margin-left: 2%;
+	margin-bottom: 2%;
+}
+.btn-submit-blue:hover{
+	cursor: pointer;
+	background-color: rgb(11, 131, 250);
+	outline: none;
+	color: white;
+	border: 1px solid #eaeaea;
+	padding: 0.6%;
+	font-size: 18px;
+	font-weight: 800;
+	font-family: 'Lato', sans-serif;
+	width: 8%;
+	margin-left: 2%;
+	margin-bottom: 2%;
 }

@@ -12,7 +12,7 @@
 
  @author: Arthur "ArT_DsL" Dias dos Santos Lasso
  @created_at: 2021-02-13
- @last_update: 2021-02-18
+ @last_update: 2021-02-20
  @file_type: PHP Language
  @language: Portugues-Brasil
 */
@@ -22,7 +22,7 @@ define("_USERNAME_PLACEHOLDER", "Usuário");
 define("_PASSWORD_PLACEHOLDER", "Senha");
 define("_LOGIN_BUTTON", "Entrar");
 define("_COPYRIGHT_NOTICE", "OPENPanel. Todos os direitos reservados.");
-define("_ERROR_LOGIN_STRING", "Your login credentials are wrong, please correct and try again.");
+define("_ERROR_LOGIN_STRING", "Suas credenciais de login estão incorretas, verifique e tente novamente.");
 define("_SERVER_INFORMATION_TITLE", "Informações do Servidor");
 define("_SERVER_INFORMATION_DESC", "Nessa aba é possível acompanhar as informações do servidor em tempo real, as atualizações são feitas a cada 5 segundos proporcionando um melhor desempenho nas tarefas que estão sendo realizadas.");
 define("_SERVER_SYSTEM_INFO", "Informações do Sistema");
@@ -52,3 +52,13 @@ define("_PASSWORD_CONFIRM_PLACEHOLDER", "Confirme a Senha");
 define("_EMAIL_PLACEHOLDER", "E-mail");
 define("_NEW_USER_ROLE", "Regra");
 define("_NEW_USER_CLOP_THEME", "Tema do CLOP");
+define("_ERROR_1_DO_LOGIN", "Requisição inválida, por favor tente novamente!");
+define("_ERROR_2_DO_LOGIN", "Você digitou um usuário inválido.");
+define("_ERROR_3_DO_LOGIN", "Algo deu errado, por favor tente novamente.");
+define("_ERROR_4_DO_LOGIN", "O usuário informado não foi encontrado.");
+define("_ERROR_5_DO_LOGIN", "A senha digitada para o usuário não confere.");
+define("_ERROR_6_DO_LOGIN", "Algo deu errado, por favor tente novamente.");
+define("_LOGOUT_MESSAGE", "Logout realizado com sucesso!");
+define("_NEW_USER_ROLE_ADMIN", "Administrador");
+define("_NEW_USER_ROLE_RESELLER", "Revendedor");
+define("_NEW_USER_ROLE_NORMAL_USER", "Usuário Normal");

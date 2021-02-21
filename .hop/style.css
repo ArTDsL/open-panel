@@ -127,3 +127,55 @@ footer{
 .flag-hop-openpanel{
 	margin-right: 1%;
 }
+.error-login-hop-openpanel{
+	position: relative;
+	display: block;
+	padding: 1%;
+	background-color: firebrick;
+	border: 0px solid black;
+	border-radius: 4px;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	color: white
+}
+.error-hide-login-hop-openpanel{
+	position: relative;
+	display: block;
+	float: right;
+	cursor: pointer;
+}
+.error-hide-login-hop-openpanel:hover{
+	position: relative;
+	display: block;
+	float: right;
+	cursor: pointer;
+	box-shadow: 0.1px 0.1px 0.1px 0.1px black;
+	border-radius: 20px;
+}
+.success-login-hop-openpanel{
+	position: relative;
+	display: block;
+	padding: 1%;
+	background-color: rgb(59, 153, 40);
+	border: 0px solid black;
+	border-radius: 4px;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	color: white
+}
+.success-hide-login-hop-openpanel{
+	position: relative;
+	display: block;
+	float: right;
+	cursor: pointer;
+}
+.success-hide-login-hop-openpanel:hover{
+	position: relative;
+	display: block;
+	float: right;
+	cursor: pointer;
+	box-shadow: 0.1px 0.1px 0.1px 0.1px black;
+	border-radius: 20px;
+}

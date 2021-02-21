@@ -11,14 +11,6 @@
 
  @author: Arthur "ArT_DsL" Dias dos Santos Lasso
  @created_at: 2021-02-15
- @last_update: 2021-02-15
+ @last_update: 2021-02-20
  @file_type: JS
 */
-//Global
-var ifr = document.getElementById("content-iframe-hop-openpanel");
-
-//Button: Server Information
-function btn_server_cfg_server_info(){
-	var url = 'server_info.php';
-	ifr.src = url;
-}

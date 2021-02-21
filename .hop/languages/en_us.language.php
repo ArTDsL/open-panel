@@ -12,7 +12,7 @@
 
  @author: Arthur "ArT_DsL" Dias dos Santos Lasso
  @created_at: 2021-02-13
- @last_update: 2021-02-18
+ @last_update: 2021-02-20
  @file_type: PHP Language
  @language: English-UnitedStates
 */
@@ -52,3 +52,13 @@ define("_PASSWORD_CONFIRM_PLACEHOLDER", "Password Confirm");
 define("_EMAIL_PLACEHOLDER", "E-mail");
 define("_NEW_USER_ROLE", "Role");
 define("_NEW_USER_CLOP_THEME", "CLOP Theme");
+define("_ERROR_1_DO_LOGIN", "The request was made is invalid, please try again.");
+define("_ERROR_2_DO_LOGIN", "You have inform a invalid username, please try again.");
+define("_ERROR_3_DO_LOGIN", "Something is wrong, please try again.");
+define("_ERROR_4_DO_LOGIN", "User was not found.");
+define("_ERROR_5_DO_LOGIN", "The password for this user does not match.");
+define("_ERROR_6_DO_LOGIN", "Something is wrong, please try again.");
+define("_LOGOUT_MESSAGE", "Logout made with success!");
+define("_NEW_USER_ROLE_ADMIN", "Administrator");
+define("_NEW_USER_ROLE_RESELLER", "Reseller");
+define("_NEW_USER_ROLE_NORMAL_USER", "Normal User");

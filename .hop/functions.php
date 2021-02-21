@@ -55,6 +55,9 @@ function verifyLocation(){
 		}else if($_GET['location'] == 'en-US' || $_GET['location'] == 'en-us'){
 			setLanguageCookie("en-US");
 			include('languages/en_us.language.php');
+		}else if($_GET['location'] == 'es-ES' || $_GET['location'] == 'es-es'){
+			setLanguageCookie("es-ES");
+			include('languages/es_ES.language.php');
 		}else{
 			setLanguageCookie("en-US");
 			include('languages/en_us.language.php');
@@ -179,4 +182,22 @@ function return_disk_data(){
 	echo '<hr>';
 	echo $disk_data = shell_exec('df -h');
 	echo '</pre>';
+}
+
+function give_error($error_code, $redirect_url){
+	header('Content-Type: application/json');
+	$response["error"] = true;
+	$response["code"] = $error_code;
+	$response["url"] = $redirect_url;
+	echo json_encode($response, JSON_PRETTY_PRINT, true);
+	http_response_code(200);
+}
+
+function give_success($redirect_url){
+	header('Content-Type: application/json');
+	$response["error"] = false;
+	$response["code"] = "000";
+	$response["url"] = $redirect_url;
+	echo json_encode($response, JSON_PRETTY_PRINT, true);
+	http_response_code(200);
 }
