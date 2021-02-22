@@ -1,3 +1,5 @@
+<a href="https://github.com/ArTDsL/open-panel/blob/main/README_br.MD"><h6>Português-Brasil</h6></a>
+
 <h1>OPENPanel</h1>
 Due a account licencing on cPanel i manage to start develop a new <strong><i>FREE</i></strong> / <strong><i>NO-COST</i></strong> / <strong><i>LIFE-TIME</i></strong>
 panel for <strong><i>USER</i></strong> / <strong><i>RESELLER</i></strong> / <strong><i>HOST</i></strong>, fell free to help!
