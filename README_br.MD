@@ -1,3 +1,5 @@
+<a href="https://github.com/ArTDsL/open-panel"><h6>English-US</h6></a>
+
 <h1>OPENPanel</h1>
 Por causa do licenciamento de usuários do CPanel eu decidi criar e desenvolver uma painel <strong><i>GRÁTIS</i></strong> / <strong><i>SEM CUSTO</i></strong> / <strong><i>INFINITA</i></strong>
 para <strong><i>USUÁRIO</i></strong> / <strong><i>REVENDEDOR</i></strong> / <strong><i>HOST</i></strong>, sinta-se livre para ajudar!
